@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		920EC6272D0C868900F58CC9 /* NooroWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6262D0C868900F58CC9 /* NooroWeatherApp.swift */; };
-		920EC6292D0C868900F58CC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6282D0C868900F58CC9 /* ContentView.swift */; };
+		920EC6292D0C868900F58CC9 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6282D0C868900F58CC9 /* HomePageView.swift */; };
 		920EC62B2D0C868D00F58CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920EC62A2D0C868D00F58CC9 /* Assets.xcassets */; };
 		920EC62E2D0C868D00F58CC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920EC62D2D0C868D00F58CC9 /* Preview Assets.xcassets */; };
 		920EC6382D0C868E00F58CC9 /* NooroWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6372D0C868E00F58CC9 /* NooroWeatherTests.swift */; };
 		920EC6422D0C868E00F58CC9 /* NooroWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6412D0C868E00F58CC9 /* NooroWeatherUITests.swift */; };
 		920EC6442D0C868E00F58CC9 /* NooroWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6432D0C868E00F58CC9 /* NooroWeatherUITestsLaunchTests.swift */; };
+		920EC6522D0C8ACE00F58CC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 920EC6512D0C8ACD00F58CC9 /* Info.plist */; };
+		920EC6582D0C8BD500F58CC9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6572D0C8BD500F58CC9 /* Location.swift */; };
+		920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		920EC6232D0C868900F58CC9 /* NooroWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NooroWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920EC6262D0C868900F58CC9 /* NooroWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NooroWeatherApp.swift; sourceTree = "<group>"; };
-		920EC6282D0C868900F58CC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		920EC6282D0C868900F58CC9 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		920EC62A2D0C868D00F58CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920EC62D2D0C868D00F58CC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		920EC6332D0C868E00F58CC9 /* NooroWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooroWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		920EC63D2D0C868E00F58CC9 /* NooroWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooroWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		920EC6412D0C868E00F58CC9 /* NooroWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NooroWeatherUITests.swift; sourceTree = "<group>"; };
 		920EC6432D0C868E00F58CC9 /* NooroWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NooroWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		920EC6512D0C8ACD00F58CC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		920EC6572D0C8BD500F58CC9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		920EC6252D0C868900F58CC9 /* NooroWeather */ = {
 			isa = PBXGroup;
 			children = (
+				920EC6532D0C8B3400F58CC9 /* NetworkLayer */,
+				920EC6542D0C8B4500F58CC9 /* ViewLayer */,
+				920EC6512D0C8ACD00F58CC9 /* Info.plist */,
 				920EC6262D0C868900F58CC9 /* NooroWeatherApp.swift */,
-				920EC6282D0C868900F58CC9 /* ContentView.swift */,
 				920EC62A2D0C868D00F58CC9 /* Assets.xcassets */,
 				920EC62C2D0C868D00F58CC9 /* Preview Content */,
 			);
@@ -125,6 +133,39 @@
 				920EC6432D0C868E00F58CC9 /* NooroWeatherUITestsLaunchTests.swift */,
 			);
 			path = NooroWeatherUITests;
+			sourceTree = "<group>";
+		};
+		920EC6532D0C8B3400F58CC9 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				920EC6562D0C8B8000F58CC9 /* Models */,
+				920EC6552D0C8B7700F58CC9 /* Service */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		920EC6542D0C8B4500F58CC9 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				920EC6282D0C868900F58CC9 /* HomePageView.swift */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		920EC6552D0C8B7700F58CC9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		920EC6562D0C8B8000F58CC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				920EC6572D0C8BD500F58CC9 /* Location.swift */,
+				920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +274,7 @@
 			files = (
 				920EC62E2D0C868D00F58CC9 /* Preview Assets.xcassets in Resources */,
 				920EC62B2D0C868D00F58CC9 /* Assets.xcassets in Resources */,
+				920EC6522D0C8ACE00F58CC9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920EC6292D0C868900F58CC9 /* ContentView.swift in Sources */,
+				920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */,
+				920EC6292D0C868900F58CC9 /* HomePageView.swift in Sources */,
+				920EC6582D0C8BD500F58CC9 /* Location.swift in Sources */,
 				920EC6272D0C868900F58CC9 /* NooroWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
