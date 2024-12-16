@@ -8,7 +8,7 @@
 import SwiftUI
 
 class SearchTextFieldViewModel: ObservableObject {
-  @Published var searchText: String = ""
+  @Published var searchText = ""
 }
 
 struct SearchTextField: View {

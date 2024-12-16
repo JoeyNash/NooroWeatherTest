@@ -17,6 +17,7 @@
 		920EC6582D0C8BD500F58CC9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6572D0C8BD500F58CC9 /* Location.swift */; };
 		920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */; };
 		920EC65C2D0C9A6600F58CC9 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */; };
+		920EC65E2D10B8F900F58CC9 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		920EC6572D0C8BD500F58CC9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				920EC6282D0C868900F58CC9 /* HomePageView.swift */,
 				920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */,
+				920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */,
 			);
 			path = ViewLayer;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				920EC65C2D0C9A6600F58CC9 /* SearchTextField.swift in Sources */,
+				920EC65E2D10B8F900F58CC9 /* SearchResultView.swift in Sources */,
 				920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */,
 				920EC6292D0C868900F58CC9 /* HomePageView.swift in Sources */,
 				920EC6582D0C8BD500F58CC9 /* Location.swift in Sources */,
