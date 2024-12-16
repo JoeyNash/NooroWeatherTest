@@ -7,14 +7,32 @@
 
 import SwiftUI
 
+class SearchTextFieldViewModel: ObservableObject {
+  @Published var searchText: String = ""
+}
+
 struct SearchTextField: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @ObservedObject var viewModel: SearchTextFieldViewModel
+  var body: some View {
+    HStack {
+      TextField("Search Location", text: $viewModel.searchText)
+        .padding()
+      Image(systemName: "magnifyingglass")
+        .renderingMode(.template)
+        .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
+        .padding()
     }
+    .background(Color(red: 242/255, green: 242/255, blue: 242/255))
+    .cornerRadius(16)
+  }
 }
 
 struct SearchTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchTextField()
+  static var previews: some View {
+    VStack {
+      Spacer()
+      SearchTextField(viewModel: SearchTextFieldViewModel())
+      Spacer()
     }
+  }
 }
