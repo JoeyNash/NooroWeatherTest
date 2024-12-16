@@ -18,6 +18,8 @@
 		920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */; };
 		920EC65C2D0C9A6600F58CC9 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */; };
 		920EC65E2D10B8F900F58CC9 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */; };
+		920EC6602D10C19300F58CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC65F2D10C19300F58CC9 /* WeatherView.swift */; };
+		920EC6622D10C7CE00F58CC9 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EC6612D10C7CE00F58CC9 /* WeatherDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		920EC6592D0C8EBD00F58CC9 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		920EC65F2D10C19300F58CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		920EC6612D10C7CE00F58CC9 /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				920EC6282D0C868900F58CC9 /* HomePageView.swift */,
 				920EC65B2D0C9A6600F58CC9 /* SearchTextField.swift */,
 				920EC65D2D10B8F900F58CC9 /* SearchResultView.swift */,
+				920EC65F2D10C19300F58CC9 /* WeatherView.swift */,
+				920EC6612D10C7CE00F58CC9 /* WeatherDetailView.swift */,
 			);
 			path = ViewLayer;
 			sourceTree = "<group>";
@@ -303,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920EC6622D10C7CE00F58CC9 /* WeatherDetailView.swift in Sources */,
 				920EC65C2D0C9A6600F58CC9 /* SearchTextField.swift in Sources */,
 				920EC65E2D10B8F900F58CC9 /* SearchResultView.swift in Sources */,
 				920EC65A2D0C8EBD00F58CC9 /* WeatherInfo.swift in Sources */,
 				920EC6292D0C868900F58CC9 /* HomePageView.swift in Sources */,
 				920EC6582D0C8BD500F58CC9 /* Location.swift in Sources */,
+				920EC6602D10C19300F58CC9 /* WeatherView.swift in Sources */,
 				920EC6272D0C868900F58CC9 /* NooroWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

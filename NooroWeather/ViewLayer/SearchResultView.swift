@@ -27,7 +27,9 @@ struct SearchResultView: View {
     HStack {
       VStack {
         Text(viewModel.name)
+          .font(.system(size: 20))
         Text(viewModel.temperatureString)
+          .font(.system(size: 60))
       }
       .padding()
       AsyncImage(url: URL(string: viewModel.iconURL)) { phase in
