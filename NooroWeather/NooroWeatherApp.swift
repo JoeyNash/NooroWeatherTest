@@ -11,7 +11,9 @@ import SwiftUI
 struct NooroWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePageView()
+            HomePageView(
+              viewModel: HomePageViewModel(withCity: UserDefaultsService.getSelectedCity())
+            )
         }
     }
 }
