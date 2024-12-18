@@ -19,10 +19,10 @@ class HomePageViewModel: ObservableObject {
 
 struct HomePageView: View {
 
-  func setSelectedCity(_ city: SearchResult) {
-    viewModel.selectedCity = city.name
-    viewModel.selectedWeather = city.weatherInfo
-    UserDefaultsService.setSelectedCity(city.name)
+  func setSelectedLocation(_ result: SearchResult) {
+    viewModel.selectedCity = result.city.name
+    viewModel.selectedWeather = result.weatherInfo
+    UserDefaultsService.setSelectedLocation("\(result.city.lat),\(result.city.lon)")
   }
 
   @ObservedObject var searchModel = SearchTextFieldViewModel()
@@ -35,13 +35,13 @@ struct HomePageView: View {
       if !viewModel.searchResults.isEmpty {
         // Prioritize showing search results
         ScrollView {
-          ForEach(viewModel.searchResults, id: \.name) { city in
-            Button(action: { setSelectedCity(city)}) {
+          ForEach(viewModel.searchResults, id: \.city.id) { result in
+            Button(action: { setSelectedLocation(result)}) {
               SearchResultView(
                 viewModel: SearchResultViewModel(
-                  name: city.name,
-                  temperatureString: "\(Int(city.weatherInfo.tempFarenheit))",
-                  iconURL: city.weatherInfo.conditionIcon
+                  name: result.city.name,
+                  temperatureString: "\(Int(result.weatherInfo.tempFarenheit))",
+                  iconURL: result.weatherInfo.conditionIcon
                 )
               )
             }
@@ -50,7 +50,6 @@ struct HomePageView: View {
       } else if !searchModel.searchText.isEmpty {
         // Search with no results. Force update to empty screen
         Spacer()
-        EmptyView()
       } else if let selectedCity = viewModel.selectedCity,
                 let weatherInfo = viewModel.selectedWeather {
         // Show current selected city's weather

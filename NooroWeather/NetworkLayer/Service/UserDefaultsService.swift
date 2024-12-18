@@ -8,13 +8,13 @@
 import Foundation
 
 class UserDefaultsService {
-  static let selectedCityKey = "selected_city"
+  static let selectedLocationKey = "selected_location"
 
-  static func setSelectedCity(_ city: String) {
-    UserDefaults.standard.set(city, forKey: selectedCityKey)
+  static func setSelectedLocation(_ location: String) {
+    UserDefaults.standard.set(location, forKey: selectedLocationKey)
   }
 
-  static func getSelectedCity() -> String? {
-    UserDefaults.standard.string(forKey: selectedCityKey)
+  static func getSelectedLocation() -> String? {
+    UserDefaults.standard.string(forKey: selectedLocationKey)
   }
 }

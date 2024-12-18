@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct SearchResult {
-  let name: String
+struct SearchResult: Codable {
+  let city: Location
   let weatherInfo: WeatherInfo
+
+  enum CodingKeys: String, CodingKey {
+    case city = "location"
+    case weatherInfo = "current"
+  }
 }
