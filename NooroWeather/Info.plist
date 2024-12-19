@@ -4,5 +4,10 @@
 <dict>
 	<key>APIKey</key>
 	<string>c609bb16d6424880b0f151847241312</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

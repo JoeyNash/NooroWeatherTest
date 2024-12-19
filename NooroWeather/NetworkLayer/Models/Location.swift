@@ -8,8 +8,16 @@
 import Foundation
 
 struct Location: Codable {
-  let id: String
   let lat: Double
   let lon: Double
   let name: String
+  let region: String
+}
+
+extension Location: Identifiable {
+  var id: String {
+    name + ", " + region
+  }
+  
+  
 }

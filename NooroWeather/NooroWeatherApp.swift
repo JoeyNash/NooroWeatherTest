@@ -12,7 +12,8 @@ struct NooroWeatherApp: App {
     var body: some Scene {
         WindowGroup {
             HomePageView(
-              viewModel: HomePageViewModel(withCity: UserDefaultsService.getSelectedLocation())
+              viewModel: HomePageViewModel(withCity: UserDefaultsService.getSelectedLocation()),
+              weatherService: NooroWeatherService()
             )
         }
     }

@@ -8,9 +8,13 @@
 import Foundation
 
 struct WeatherInfo: Codable {
-  let conditionText: String
-  let conditionIcon: String
-  let conditionCode: Int
+
+  struct Condition: Codable {
+    let text: String
+    let code: Int
+    let icon: String
+  }
+  let condition: Condition
   let feelsLikeCelsius: Double
   let feelsLikeFarenheit: Double
   let humidity: Int
@@ -19,9 +23,7 @@ struct WeatherInfo: Codable {
   let uvIndex: Double
 
   enum CodingKeys: String, CodingKey {
-    case conditionText = "condition:text"
-    case conditionIcon = "condition:icon"
-    case conditionCode = "condition:code"
+    case condition
     case feelsLikeCelsius = "feelslike_c"
     case feelsLikeFarenheit = "feelslike_f"
     case humidity

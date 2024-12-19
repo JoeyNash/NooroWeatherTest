@@ -28,11 +28,14 @@ struct SearchResultView: View {
       VStack {
         Text(viewModel.name)
           .font(.system(size: 20))
+          .foregroundColor(.init(red: 44/255, green: 44/255, blue: 44/255))
         Text(viewModel.temperatureString)
           .font(.system(size: 60))
+          .foregroundColor(.init(red: 44/255, green: 44/255, blue: 44/255))
       }
       .padding()
-      AsyncImage(url: URL(string: viewModel.iconURL)) { phase in
+      Spacer()
+      AsyncImage(url: URL(string: viewModel.iconURL.replacingOccurrences(of: "//", with: "https://"))) { phase in
         switch phase {
           case .success(let image):
             image

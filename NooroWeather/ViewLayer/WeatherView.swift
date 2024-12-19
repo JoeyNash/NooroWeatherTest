@@ -22,7 +22,8 @@ struct WeatherView: View {
   var body: some View {
     VStack {
       // Condition image
-      AsyncImage(url: URL(string: viewModel.weather.conditionIcon)) { phase in
+      AsyncImage(url: URL(string: viewModel.weather.condition.icon
+        .replacingOccurrences(of: "//", with: "https://"))) { phase in
         switch phase {
           case .success(let image):
             image
@@ -61,9 +62,11 @@ struct WeatherView_Previews: PreviewProvider {
   static let mockWeatherViewModel = WeatherViewModel(
     name: "Norfolk",
     weather: WeatherInfo(
-      conditionText: "Mist",
-      conditionIcon: "",
-      conditionCode: 1030,
+      condition: .init(
+        text: "Mist",
+        code: 1030,
+        icon: ""
+      ),
       feelsLikeCelsius: 11.3,
       feelsLikeFarenheit: 52.4,
       humidity: 89,
